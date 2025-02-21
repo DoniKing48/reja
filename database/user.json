@@ -1,0 +1,20 @@
+{
+    "name": "Doniyor",
+    "profession": "Software Engineer",
+    "age": 18,
+    "residence": "Uzbekistan",
+    "address": "Samarqand",
+    "languages": ["Uzbek", "Russian", "English"],
+    "skills": ["Html", "Css", "Js", "NodeJS"],
+    "extra_skills": ["Bootstrap", "Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge"],
+    "work_place": "Advance",
+    "service_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.",
+    "about_me": "Main character in my life)))",
+    "city": "Samarqand",
+    "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
+    "flower_desc": ["What is a Flower?", "What is a Seedling?", "Who is a Gardner?"],
+    "flower_name": ["Tulip", "Daffodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry", "blossom"],
+    "flower_price": ["15$", "25$", "12$", "20$", "35$", "30$", "22$", "19$", "9$"],
+    "famous_words": ["World is Beautiful with Flowers"],
+    "famous_name": ["Dan"]
+  }
