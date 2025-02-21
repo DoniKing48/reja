@@ -1,0 +1,16 @@
+.main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1312px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.left {
+    position: relative;
+    width: 305px;
+    height: 1315px;
+    background-color: white;
+}
