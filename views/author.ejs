@@ -19,7 +19,7 @@
             <div class="left">
                 <div class="left-1">
                     <div class="left_1">
-                        <img 
+                        <img class="profimg"
                         src="images/profile.png" 
                         width="145px" 
                         height="145px"
@@ -71,18 +71,225 @@
 
                     </div>
                 </div>
+
                 <div class="margin"></div>
-                <div class="left-2"></div>
+                <div class="left-2">
+                  <ul class="info-list">
+                    <li>
+                      <span class="info-label">Age:</span>
+                      <span class="info-value"><%=user.age%></span>
+                    </li>
+                    <li>
+                      <span class="info-label">Residence:</span>
+                      <span class="info-value"><%=user.residence%></span>
+                    </li>
+                    <li>
+                      <span class="info-label">Freelance:</span>
+                      <span class="info-value">Available</span>
+                    </li>
+                    <li>
+                      <span class="info-label">Address:</span>
+                      <span class="info-value"><%=user.address%></span>
+                    </li>
+                  </ul>
+                </div>
+
                 <div class="margin"></div>
-                <div class="left-3"></div>
+                <div class="left-3">
+                  <section class="languages">
+                    <h3>Languages</h3>
+                    
+                    <div class="language-skill">
+                      <div class="skill-info">
+                        <span class="skill-name">Bangla</span>
+                        <span class="skill-value">100%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                      </div>
+                    </div>
+                  
+                    <div class="language-skill">
+                      <div class="skill-info">
+                        <span class="skill-name">English</span>
+                        <span class="skill-value">80%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                      </div>
+                    </div>
+                  
+                    <div class="language-skill">
+                      <div class="skill-info">
+                        <span class="skill-name">Spanish</span>
+                        <span class="skill-value">60%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
                 <div class="margin"></div>
-                <div class="left-4"></div>
+                <div class="left-4">
+                  <section class="skills">
+                    <h3>Skills</h3>
+                  
+                    <div class="skill">
+                      <div class="skill-info">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-value">90%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  
+                    <div class="skill">
+                      <div class="skill-info">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-value">85%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                      </div>
+                    </div>
+                  
+                    <div class="skill">
+                      <div class="skill-info">
+                        <span class="skill-name">JS</span>
+                        <span class="skill-value">80%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                      </div>
+                    </div>
+                  
+                    <div class="skill">
+                      <div class="skill-info">
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-value">75%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                      </div>
+                    </div>
+                  
+                    <div class="skill">
+                      <div class="skill-info">
+                        <span class="skill-name">WordPress</span>
+                        <span class="skill-value">85%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                      </div>
+                    </div>
+                  
+                  </section>
+                </div>
+
                 <div class="margin"></div>
-                <div class="left-5"></div>
+                <div class="left-5">
+                  <section class="extra-skills">
+                    <h3>Extra Skills</h3>
+                    <ul class="skills-list">
+                      <li>Bootstrap, Materialize</li>
+                      <li>Stylus, Sass, Less</li>
+                      <li>Gulp, Webpack, Grunt</li>
+                      <li>GIT Knowledge</li>
+                    </ul>
+                  </section>
+                </div>
+
                 <div class="margin"></div>
             </div>
-            <div class="mid"></div>
-            <div class="right"></div>
+
+            <div class="mid">
+                <header class="main-header">
+                  <h2 class="main-heading">
+                    <%=user.about_me%>
+                  </h2>
+
+                  <p class="subtitle">
+                    I am deeply passionate about becoming an outstanding engineer,
+                    constantly challenging myself to learn and excel in every aspect
+                    of this field. From experimenting with emerging technologies to dissecting complex
+                    problems, I approach every task with unwavering determination. My ambition drives
+                    me to push boundaries, embrace innovation, and continually refine my technical skills.
+                  </p>
+
+                  <div class="buttons">
+                    <a href="#" class="btn">HIRE ME ></a>
+                  </div>
+                  <!-- <div>
+                    <img src="images/me.png" alt="My Photo" class="photo-right">
+                  </div> -->
+                </header>
+
+              <section class="services">
+                <h2>My Services</h2>
+                <p>I am a beginner in software engineering, eager to learn, experiment, and build innovative solutions to real-world problems.</p>
+                <div class="service-cards">
+
+                  <div class="service-card">
+                    <img src="btn_icon/web.svg" alt="" />
+                    <h3>Web Design</h3>
+                    <p>Blog & E-commerce</p>
+                  </div>
+
+                  <div class="service-card">
+                    <img src="btn_icon/design.svg" alt="" />
+                    <h3>UI/UX Design</h3>
+                    <p>Mobile App, Website Design</p>
+                  </div>
+
+                  <div class="service-card">
+                    <img src="btn_icon/game.svg" alt="" />
+                    <h3>Game Design</h3>
+                    <p>Concept & Prototype</p>
+                  </div>
+
+                  <div class="service-card">
+                    <img src="btn_icon/photo.svg" alt="" />
+                    <h3>Photography</h3>
+                    <p>Photo cover, best making</p>
+                  </div>
+
+                  <div class="service-card">
+                    <img src="btn_icon/design.svg" alt="" />
+                    <h3>Sound Design</h3>
+                    <p>Voice over, beat making</p>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>Advertising</h3>
+                    <p>Brand design, brand marketing</p>
+                  </div>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="icon-circle">
+                  <img src="menu_icons/home.svg" alt="Home Icon" />
+                </div>
+                <div class="icon-circle">
+                  <img src="menu_icons/code.svg" alt="Code Icon" />
+                </div>
+                <div class="icon-circle">
+                  <img src="menu_icons/study.svg" alt="Study Icon" />
+                </div>
+                <div class="icon-circle">
+                  <img src="menu_icons/case.svg" alt="Briefcase Icon" />
+                </div>
+                <div class="icon-circle">
+                  <img src="menu_icons/pen.svg" alt="Pen Icon" />
+                </div>
+                <div class="icon-circle">
+                  <img src="menu_icons/chat.svg" alt="Chat Icon" />
+                </div>
+              </div>
+            </div>
         </div>
     </div>
   </body>
