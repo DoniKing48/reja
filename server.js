@@ -36,12 +36,12 @@ app.get("/author", (req,res) => {
 });
 
 app.get("/", function(req, res) {
-    res.render("BUY");
+    res.render("Reja");
 });
 
 
 const server = http.createServer(app);
 let PORT = 3000
 server.listen(PORT, function () {
-    console.log(`the server is running succesfuly on port: ${PORT}`);
+    console.log(`the server is running succesfuly on port: ${PORT}, http://localhost:${PORT}`);
 });
