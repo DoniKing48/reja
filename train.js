@@ -99,3 +99,17 @@ function countLetter(letter, word) {
 }
 
 console.log(countLetter("a", "abstraction"));
+
+// B-TASK
+
+function countDigits(str) {
+  let count = 0;
+  for (let char of str) {
+    if (char >= '0' && char <= '9') {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countDigits("kdsjnk12i76t7jsacb867,jashv765"));
