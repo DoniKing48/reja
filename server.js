@@ -5,7 +5,6 @@ let db;
 const connectionString = "mongodb+srv://KingDoni:Kingdoni48.@dan.9ygtq.mongodb.net/";
 
 mongodb.connect(connectionString, {
-    userNewUrlParser: true,
     useUnifiedTopology: true
 }, (err, client) => {
     if(err) console.log ("ERROR on connection MongoDB")
