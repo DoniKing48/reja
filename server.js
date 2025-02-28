@@ -1,8 +1,7 @@
 const http = require("http");
 const mongodb = require("mongodb");
 
-let db;
-const connectionString = "mongodb+srv://KingDoni:Kingdoni48.@dan.9ygtq.mongodb.net/";
+const connectionString = "mongodb+srv://KingDoni:Kingdoni48.@dan.9ygtq.mongodb.net/Reja";
 
 mongodb.connect(connectionString, {
     useUnifiedTopology: true

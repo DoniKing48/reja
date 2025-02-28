@@ -23,8 +23,6 @@ document
     .getElementById(create-form)
     .addEventListener("submit", function(e) {
         e.preventDefault();
-        
-
         axios.post("/create-item", {reja: createField.value})
         .then((response) =>{
             document
@@ -36,4 +34,5 @@ document
         .catch((err) =>{
             console.log("Try again later!")
         });
-})
+});
+
