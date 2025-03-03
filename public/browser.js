@@ -20,7 +20,7 @@ function itemTemplate(item) {
 let createField = document.getElementById("create-field");
 
 document
-    .getElementById(create-form)
+    .getElementById("create-form")
     .addEventListener("submit", function(e) {
         e.preventDefault();
         axios.post("/create-item", {reja: createField.value})
@@ -29,10 +29,31 @@ document
             .getElementById("item-list")
             .insertAdjacentHTML("beforeend", itemTemplate(response.data))
             createField.value = "";
-            createField.fucus();
+            createField.focus();
         })
         .catch((err) =>{
             console.log("Try again later!")
         });
+});
+
+document.addEventListener("click", function(e) {
+//delete
+  console.log(e.target);
+  if(e.target.classList.contains("delete-me")) {
+    if(confirm("Do you really want to delete?")) {
+      axios.post("/delete-item", {id: e.target.getAttribute("data-id")}) 
+      .then((response) => {
+        console.log (response.data);
+        e.target.parentElement.parentElement.remove();
+      })
+      .catch((err) => {
+        console.log("Try again later!")
+      });    
+    }
+  }
+//edit
+  if(e.target.classList.contains("edit-me")) {
+    alert("edit");
+  }
 });
 

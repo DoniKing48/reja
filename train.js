@@ -113,3 +113,11 @@ function countDigits(str) {
 }
 
 console.log(countDigits("kdsjnk12i76t7jsacb867,jashv765"));
+
+// C-TASK
+
+function checkContent(a, b) {
+  return a.length === b.length && a.split("").sort().join("") === b.split("").sort().join("");
+}
+
+console.log(checkContent("school", "univer"));
