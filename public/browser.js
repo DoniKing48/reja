@@ -41,6 +41,7 @@ document.addEventListener("click", function(e) {
   console.log(e.target);
   if(e.target.classList.contains("delete-me")) {
     if(confirm("Do you really want to delete?")) {
+      //step-1 from frontend to backend
       axios.post("/delete-item", {id: e.target.getAttribute("data-id")}) 
       .then((response) => {
         console.log (response.data);
@@ -53,7 +54,24 @@ document.addEventListener("click", function(e) {
   }
 //edit
   if(e.target.classList.contains("edit-me")) {
-    alert("edit");
+    let userInput = prompt ("Edit", e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
+    if(userInput) {
+      axios.post("/edit-item",{id: e.target.getAttribute("data-id"), new_input: userInput,
+      }).then ((response) => {
+        console.log(response.data);
+        e.target.parentElement.parentElement.querySelector
+        (".item-text")
+        .innerHTML = userInput;
+      }).catch ((err) => {
+        console.log("Try again later!");
+      })
+    }
   }
 });
 
+document.getElementById("clean-all").addEventListener("click", function () {
+  axios.post("/delete-all", { delete_all: true }).then((response) => {
+    alert(response.data.state);
+    document.location.reload();
+  });
+});

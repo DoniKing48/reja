@@ -121,3 +121,59 @@ function checkContent(a, b) {
 }
 
 console.log(checkContent("school", "univer"));
+
+// D-TASK
+
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+
+  _getTime() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    if (minutes < 10) minutes = '0' + minutes;
+    return `${hours}:${minutes}`;
+  }
+
+  qoldiq() {
+    const time = this._getTime();
+    const result = `Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+    console.log(result);
+    return result;
+  }
+
+  sotish(product, amount) {
+    const time = this._getTime();
+    if (product === "non") {
+      this.non -= amount;
+    } else if (product === "lagmon") {
+      this.lagmon -= amount;
+    } else if (product === "cola") {
+      this.cola -= amount;
+    }
+    console.log(`Hozir ${time}da ${amount}ta ${product} sotildi.`);
+  }
+
+  qabul(product, amount) {
+    const time = this._getTime();
+    if (product === "non") {
+      this.non += amount;
+    } else if (product === "lagmon") {
+      this.lagmon += amount;
+    } else if (product === "cola") {
+      this.cola += amount;
+    }
+    console.log(`Hozir ${time}da ${amount}ta ${product} qabul qilindi.`);
+  }
+}
+
+const shop = new Shop(20, 5, 4);
+shop.qoldiq(); 
+
+shop.sotish("non", 4);
+shop.qabul("cola", 16);
+shop.qoldiq(); 
