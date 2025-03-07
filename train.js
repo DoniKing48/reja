@@ -178,6 +178,8 @@ shop.sotish("non", 4);
 shop.qabul("cola", 16);
 shop.qoldiq(); 
 
+// E-TASK
+
 function getReverse(str) {
   return str.split("").reverse().join("");
 }
