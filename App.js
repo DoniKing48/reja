@@ -25,7 +25,7 @@ app.use(express.urlencoded({extended: true}));
 //2-session code
 
 //3-views code
-app.set("views", "views");
+app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
 //4-routing code
