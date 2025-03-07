@@ -177,3 +177,9 @@ shop.qoldiq();
 shop.sotish("non", 4);
 shop.qabul("cola", 16);
 shop.qoldiq(); 
+
+function getReverse(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(getReverse("Hi MIT"));
